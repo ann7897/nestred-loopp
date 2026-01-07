@@ -1,16 +1,13 @@
-a = 12
-b = 3
-c = 4
-d = 9
-answer = b**c + d/ b*c + a
-print(answer)
+#take input for the student that he can attend the exam or not
+medical_cause=input("did you have a medical cause Y or N: ")
+#take input of the attendence
+atten = int(input("enter the attendence of the student: "))
 
-
-
-n1=int(input("enter numerator: "))
-n2=int(input("enter denominator: "))
-if n1%n2==0:
-    print(str(n1)+" is divisible by  "+str(n2))
+#cheaking the user input predicting out out accordingly
+if medical_cause == 'Y': #cheaking the condition 1
+  print ("you are allowed")
 else:
-    print(str(n1)+" is not divisible by "+str(n2))
-    
+  if atten>=75:  #cheaking the condition 2
+    print ("allowed")
+  else:
+    print ("not allowed")
